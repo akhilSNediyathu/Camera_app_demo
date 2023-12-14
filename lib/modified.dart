@@ -19,9 +19,9 @@ class _ScreenHomeState extends State<ScreenHome2> {
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text('Camera App'),
+          title: const Text('Camera App'),
           flexibleSpace: Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               gradient: LinearGradient(
                 colors: [Colors.deepPurple, Colors.red],
                 begin: Alignment.bottomRight,
@@ -39,7 +39,7 @@ class _ScreenHomeState extends State<ScreenHome2> {
                 maxRadius: 70,
                 child: GestureDetector(
                   onTap: () => pickImage(),
-                  child: Icon(
+                  child: const Icon(
                     Icons.camera_alt_outlined,
                     size: 100,
                     color: Colors.black,
@@ -64,7 +64,7 @@ class _ScreenHomeState extends State<ScreenHome2> {
             ),
           ],
         ),
-        backgroundColor: Color.fromARGB(255, 163, 157, 157),
+        backgroundColor: const Color.fromARGB(255, 163, 157, 157),
       ),
     );
   }
